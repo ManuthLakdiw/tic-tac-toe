@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backGroundPane" prefHeight="504.0" prefWidth="494.0" style="-fx-background-color: black; -fx-border-color: yellow; -fx-border-width: 2; -fx-border-radius: 5;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.tictactoe.service.BoardController">
+   <children>
+      <Label fx:id="lblTitle" alignment="CENTER" layoutX="2.0" layoutY="14.0" prefHeight="67.0" prefWidth="551.0" text="Tic - Tac - Toe" textFill="WHITE">
+         <font>
+            <Font name="Baloo 2 ExtraBold" size="39.0" />
+         </font>
+      </Label>
+      <GridPane alignment="CENTER" layoutX="108.0" layoutY="114.0" prefHeight="277.0" prefWidth="278.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="86.0" prefWidth="86.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="86.0" prefWidth="86.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="86.0" prefWidth="86.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="86.0" prefHeight="86.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="86.0" prefHeight="86.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="86.0" prefHeight="86.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn2" mnemonicParsing="false" onMouseClicked="#btn2OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn9" mnemonicParsing="false" onMouseClicked="#btn9OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn8" mnemonicParsing="false" onMouseClicked="#btn8OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn7" mnemonicParsing="false" onMouseClicked="#btn7OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn6" mnemonicParsing="false" onMouseClicked="#btn6OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn5" mnemonicParsing="false" onMouseClicked="#btn5OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn4" mnemonicParsing="false" onMouseClicked="#btn4OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn3" mnemonicParsing="false" onMouseClicked="#btn3OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn1" mnemonicParsing="false" onMouseClicked="#btn1OnClicked" prefHeight="131.0" prefWidth="114.0" style="-fx-background-color: transparent; -fx-border-color: yellow;" textFill="WHITE">
+               <font>
+                  <Font name="Baloo 2 ExtraBold" size="38.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Button fx:id="btnRestart" layoutX="413.0" layoutY="427.0" mnemonicParsing="false" onAction="#setBtnRestart" prefHeight="51.0" prefWidth="104.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 10; -fx-border-width: 2;" text="Restart" textFill="#f7fc00">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Label fx:id="lblWin" alignment="CENTER" contentDisplay="CENTER" layoutX="86.0" layoutY="66.0" prefHeight="33.0" prefWidth="323.0" textFill="#00da41">
+         <font>
+            <Font name="Baloo Bhai 2 ExtraBold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRound" layoutX="403.0" layoutY="103.0" prefHeight="31.0" prefWidth="148.0" textFill="WHITE">
+         <font>
+            <Font name="Baloo 2 ExtraBold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
